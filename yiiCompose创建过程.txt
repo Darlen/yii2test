@@ -1,0 +1,290 @@
+F:\php_workspace\advanced>composer -version
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.0-dev (7c62e2b5346a6a656dd9587203719e35bb768056) 2016-03-16 08:47:37
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+  -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  about           Short information about Composer
+  archive         Create an archive of this composer package
+  browse          Opens the package's repository URL or homepage in your browser.
+  clear-cache     Clears composer's internal package cache.
+  clearcache      Clears composer's internal package cache.
+  config          Set config options
+  create-project  Create new project from a package into given directory.
+  depends         Shows which packages cause the given package to be installed
+  diagnose        Diagnoses the system to identify common errors.
+  dump-autoload   Dumps the autoloader
+  dumpautoload    Dumps the autoloader
+  exec            Execute a vendored binary/script
+  global          Allows running commands in the global composer dir ($COMPOSER_HOME).
+  help            Displays help for a command
+  home            Opens the package's repository URL or homepage in your browser.
+  info            Show information about packages
+  init            Creates a basic composer.json file in current directory.
+  install         Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json.
+  licenses        Show information about licenses of dependencies
+  list            Lists commands
+  prohibits       Shows which packages prevent the given package from being installed
+  remove          Removes a package from the require or require-dev
+  require         Adds required packages to your composer.json and installs them
+  run-script      Run the scripts defined in composer.json.
+  search          Search for packages
+  self-update     Updates composer.phar to the latest version.
+  selfupdate      Updates composer.phar to the latest version.
+  show            Show information about packages
+  status          Show a list of locally modified packages
+  suggests        Show package suggestions
+  update          Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+  validate        Validates a composer.json and composer.lock
+  why             Shows which packages cause the given package to be installed
+  why-not         Shows which packages prevent the given package from being installed
+
+F:\php_workspace\advanced>composer selfupdate
+Updating to version .
+
+
+  [Composer\Downloader\TransportException]
+  The "https://getcomposer.org/download//composer.phar.sig" file could not be downloaded (HTTP/1.1 404 Not Found)
+
+
+self-update [-r|--rollback] [--clean-backups] [--no-progress] [--update-keys] [--] [<version>]
+
+
+F:\php_workspace\advanced>php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
+
+F:\php_workspace\advanced>php -r "if (hash('SHA384', file_get_contents('composer-setup.php')) === '41e71d86b40f28e771d4bb662b997f79625196afcca95a5abf44391188c6
+Installer verified
+
+F:\php_workspace\advanced>php composer-setup.php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: F:\php_workspace\advanced\composer.phar
+Use it: php composer.phar
+
+F:\php_workspace\advanced>composer -v
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.0-dev (7c62e2b5346a6a656dd9587203719e35bb768056) 2016-03-16 08:47:37
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+  -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  about           Short information about Composer
+  archive         Create an archive of this composer package
+  browse          Opens the package's repository URL or homepage in your browser.
+  clear-cache     Clears composer's internal package cache.
+  clearcache      Clears composer's internal package cache.
+  config          Set config options
+  create-project  Create new project from a package into given directory.
+  depends         Shows which packages cause the given package to be installed
+  diagnose        Diagnoses the system to identify common errors.
+  dump-autoload   Dumps the autoloader
+  dumpautoload    Dumps the autoloader
+  exec            Execute a vendored binary/script
+  global          Allows running commands in the global composer dir ($COMPOSER_HOME).
+  help            Displays help for a command
+  home            Opens the package's repository URL or homepage in your browser.
+  info            Show information about packages
+  init            Creates a basic composer.json file in current directory.
+  install         Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json.
+  licenses        Show information about licenses of dependencies
+  list            Lists commands
+  prohibits       Shows which packages prevent the given package from being installed
+  remove          Removes a package from the require or require-dev
+  require         Adds required packages to your composer.json and installs them
+  run-script      Run the scripts defined in composer.json.
+  search          Search for packages
+  self-update     Updates composer.phar to the latest version.
+  selfupdate      Updates composer.phar to the latest version.
+  show            Show information about packages
+  status          Show a list of locally modified packages
+  suggests        Show package suggestions
+  update          Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+  validate        Validates a composer.json and composer.lock
+  why             Shows which packages cause the given package to be installed
+  why-not         Shows which packages prevent the given package from being installed
+
+F:\php_workspace\advanced>php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced ../yii2test
+Failed to decode response: zlib_decode(): data error
+Retrying with degraded mode, check https://getcomposer.org/doc/articles/troubleshooting.md#degraded-mode for more info
+Your configuration does not allow connection to http://packagist.org. See https://getcomposer.org/doc/06-config.md#secure-http for details.
+http://packagist.org could not be fully loaded, package information was loaded from the local cache and may be out of date
+Installing yiisoft/yii2-app-advanced (dev-master da403981846a7dbc6c114e682dda847d2061f200)
+
+
+  [InvalidArgumentException]
+  Project directory ../yii2test/ is not empty.
+
+
+create-project [-s|--stability STABILITY] [--prefer-source] [--prefer-dist] [--repository REPOSITORY] [--repository-url REPOSITORY-URL] [--dev] [--no-dev] [--n
+
+
+F:\php_workspace\advanced>php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced ../yii2test2
+Installing yiisoft/yii2-app-advanced (dev-master da403981846a7dbc6c114e682dda847d2061f200)
+  - Installing yiisoft/yii2-app-advanced (dev-master master)
+    Loading from cache
+
+Created project in ../yii2test2
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing yiisoft/yii2-composer (dev-master d33d104)
+    Downloading: 100%
+
+  - Installing ezyang/htmlpurifier (v4.7.0)
+    Downloading: 100%
+
+  - Installing bower-asset/jquery (1.11.3)
+    Downloading: 100%
+
+  - Installing bower-asset/yii2-pjax (v2.0.6)
+    Downloading: 100%
+
+  - Installing bower-asset/punycode (v1.3.2)
+    Downloading: 100%
+
+  - Installing bower-asset/jquery.inputmask (3.2.7)
+    Downloading: 100%
+
+  - Installing cebe/markdown (dev-master e449935)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2 (dev-master 7d87dc7)
+    Downloading: 100%
+
+  - Installing swiftmailer/swiftmailer (5.x-dev fffbc0e)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-swiftmailer (dev-master 2cca1bb)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-codeception (dev-master ee239c2)
+    Downloading: 100%
+
+  - Installing bower-asset/bootstrap (v3.3.6)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-bootstrap (dev-master 4133d6b)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-debug (dev-master b258732)
+    Downloading: 100%
+
+  - Installing bower-asset/typeahead.js (v0.11.1)
+    Downloading: 100%
+
+  - Installing phpspec/php-diff (dev-master 30e103d)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-gii (dev-master fed0f3b)
+    Downloading: 100%
+
+  - Installing fzaninotto/faker (dev-master 588da2f)
+    Downloading: 100%
+
+  - Installing yiisoft/yii2-faker (dev-master 186c772)
+    Downloading: 100%
+
+Writing lock file
+Generating autoload files
+
+F:\php_workspace\advanced>cd ..
+
+F:\php_workspace>ls
+'ls' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+F:\php_workspace>dir
+ 驱动器 F 中的卷是 Study
+ 卷的序列号是 000A-105B
+
+ F:\php_workspace 的目录
+
+16/03/16  23:07    <DIR>          .
+16/03/16  23:07    <DIR>          ..
+16/03/16  23:21    <DIR>          .idea
+16/03/16  21:20             6,398 access.log
+16/03/16  22:57    <DIR>          advanced
+16/03/16  20:39            11,359 error.log
+16/03/16  20:39                58 index.php
+16/03/16  22:09    <DIR>          yii2test
+16/03/16  23:21    <DIR>          yii2test2
+               3 个文件         17,815 字节
+               6 个目录 41,607,602,176 可用字节
+
+F:\php_workspace>cd yii2test2
+
+F:\php_workspace\yii2test2>init
+Yii Application Initialization Tool v1.0
+
+Which environment do you want the application to be initialized in?
+
+  [0] Development
+  [1] Production
+
+  Your choice [0-1, or "q" to quit] 0
+
+  Initialize the application under 'Development' environment? [yes|no] yes
+
+  Start initialization ...
+
+   generate backend/config/main-local.php
+   generate backend/config/params-local.php
+   generate backend/web/index-test.php
+   generate backend/web/index.php
+   generate common/config/main-local.php
+   generate common/config/params-local.php
+   generate console/config/main-local.php
+   generate console/config/params-local.php
+   generate frontend/config/main-local.php
+   generate frontend/config/params-local.php
+   generate frontend/web/index-test.php
+   generate frontend/web/index.php
+   generate yii
+   generate cookie validation key in backend/config/main-local.php
+   generate cookie validation key in frontend/config/main-local.php
+      chmod 0777 backend/runtime
+      chmod 0777 backend/web/assets
+      chmod 0777 frontend/runtime
+      chmod 0777 frontend/web/assets
+      chmod 0755 yii
+      chmod 0755 tests/codeception/bin/yii
+
+  ... initialization completed.
+
+
+F:\php_workspace\yii2test2>
